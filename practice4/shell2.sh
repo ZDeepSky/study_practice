@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 for para in $@ ; do
     echo $para
     key=${para%=*}
