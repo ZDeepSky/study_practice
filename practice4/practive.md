@@ -1,9 +1,6 @@
 # 题目
 
-```CMake
-两个shell脚本，shell1调用shell2
-shell1变量
-（1）字符串1"12345678", 提取字符串3~6位
-（2）字符串1传递到shell2，替换678为876
-（3）打印长度
-```
+* shell1脚本 read读入参数value1
+* read参数value2
+* 将key value 作为入参调用shell2
+* 在shell2中 将key value分离开

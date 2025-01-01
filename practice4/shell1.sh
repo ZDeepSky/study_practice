@@ -1,21 +1,12 @@
 #!/bin/bash
 
-# 遍历所有输入参数
-for param in "$@"
-do
-    case $param in
-        start)
-            echo "启动操作"
-            ;;
-        stop)
-            echo "停止操作"
-            ;;
-        restart)
-            echo "重启操作"
-            ;;
-        *)
-            echo "未知操作: $param"
-            ;;
-    esac
-done
+key1="key1"
+key2="key2"
+
+read -p "key1 value:" value01
+read -p "key2 value:" value02
+
+
+sh shell2.sh "$key1=$value01" "$key2=$value02" 
+
 
